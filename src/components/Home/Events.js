@@ -17,7 +17,7 @@ const SpeakerArr = [
     image: require("../../assets/Speakers/JITENDRA_KUMAR.webp")
   },
   {
-    name: "MR. T.C. GUPTA I.A.S ( RETD.)",
+    name: "MR. T.C. GUPTA I.A.S",
     designation: "Chairperson Right To Service Commission Govt. Of Haryana",
     image: require("../../assets/Speakers/TC_GUPTA.jpg")
   },
@@ -37,7 +37,7 @@ const SpeakerArr = [
     image: require("../../assets/Speakers/AIR_MARSHAL_RKS.jpg")
   },
   {
-    name: "MR.ALOK MITTAL",
+    name: "MR. ALOK MITTAL",
     designation: "President TiE Delhi NCR",
     image: require("../../assets/Speakers/ALOK_MITTAL.png")
   },
@@ -65,14 +65,14 @@ export default function Events() {
   return (
     <div className='flex flex-col gap-8 items-center py-12 px-8 sm:px-16'>
       <h1 className='text-5xl font-semibold text-[#601212]'>Event Speakers</h1>
-      <div className='max-w-screen-xl grid grid-cols-[250px_250px_250px_250px] gap-8'>
+      <div className='max-w-screen-xl grid grid-cols-[270px] md:grid-cols-[270px_270px] lgx:grid-cols-[270px_270px_270px_270px] gap-8'>
         {
           SpeakerArr.slice(0, 8).map((item) => (
             <SpeakerCard key={item.name} data={item} />
           ))
         }
       </div>
-      <div className='w-[250px]'>
+      <div className='w-[270px]'>
         <SpeakerCard key={SpeakerArr[8].name} data={SpeakerArr[8]} />
       </div>
     </div>

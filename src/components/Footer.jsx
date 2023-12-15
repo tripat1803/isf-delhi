@@ -5,12 +5,11 @@ import { HashLink } from 'react-router-hash-link'
 export default function Footer() {
     return (
         <div style={{
-            background: "#CA5C59"
+            background: "#601212"
         }} className='flex justify-center items-center px-8 sm:px-16 py-20'>
             <div className='max-w-screen-2xl grid grid-cols-1 sm:grid-cols-2 xlg:grid-cols-3 gap-8'>
                 <div className='w-full flex flex-col gap-4 text-white'>
-                    {/* <img className='w-[130px]' src={require("../assets/logo.png")} /> */}
-                    <div className='w-[130px]'>Logo</div>
+                    <img className='w-[130px]' src={require("../assets/logo.png")} />
                     <p>Chitkara University Centre for
                         Entrepreneurship Education &
                         Development (CUCEED) has indeed

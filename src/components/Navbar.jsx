@@ -7,32 +7,47 @@ import { HashLink } from 'react-router-hash-link';
 export default function Navbar() {
     const [style, setStyle] = useState("-150%");
     const navRef = useRef(null);
+    const linkRef = useRef(null);
 
-    useEffect(() => {
-        window.onscroll = (e) => {
-            if(window.scrollY > 20){
-                navRef.current.classList.add("bg-white");
-                navRef.current.classList.add("drop-shadow-md");
-            } else {
-                navRef.current.classList.remove("bg-white");
-                navRef.current.classList.remove("drop-shadow-md");
-            }
-        }
-    }, []);
+    // useEffect(() => {
+    //     if(window.scrollY > 20){
+    //         navRef.current.classList.add("bg-white");
+    //         navRef.current.classList.add("drop-shadow-md");
+    //         linkRef.current.classList.remove("text-white");
+    //         linkRef.current.classList.add("text-[#F56F6C]");
+    //     } else {
+    //         navRef.current.classList.remove("bg-white");
+    //         navRef.current.classList.remove("drop-shadow-md");
+    //         linkRef.current.classList.add("text-white");
+    //         linkRef.current.classList.remove("text-[#F56F6C]");
+    //     }
+    //     window.onscroll = (e) => {
+    //         if(window.scrollY > 20){
+    //             navRef.current.classList.add("bg-white");
+    //             navRef.current.classList.add("drop-shadow-md");
+    //             linkRef.current.classList.remove("text-white");
+    //             linkRef.current.classList.add("text-[#F56F6C]");
+    //         } else {
+    //             navRef.current.classList.remove("bg-white");
+    //             navRef.current.classList.remove("drop-shadow-md");
+    //             linkRef.current.classList.add("text-white");
+    //             linkRef.current.classList.remove("text-[#F56F6C]");
+    //         }
+    //     }
+    // }, []);
 
     return (
-        <div ref={navRef} className={`duration-300 fixed top-0 left-0 z-[20] w-full flex justify-center items-center py-4 px-8 sm:px-16`}>
+        <div ref={navRef} className={`duration-300 absolute top-0 left-0 z-[20] w-full flex justify-center items-center py-4 px-8 sm:px-16`}>
             <div className='w-full max-w-screen-2xl flex justify-between'>
                 <Link to="/">
-                    {/* <img className='w-[120px]' src={require("../assets/logo.png")} /> */}
-                    <div className='w-[120px]'>Logo</div>
+                    <img className='w-[100px]' src={require("../assets/logo.png")} />
                 </Link>
-                <div className='hidden ss:flex gap-8 items-center text-[#F56F6C] font-medium'>
-                    <Link className='border-2 border-[#F56F6C] px-3 py-1' to="/">Home</Link>
-                    <Link className='border-2 border-[#F56F6C] px-3 py-1' to="/about">About</Link>
-                    <HashLink className='border-2 border-[#F56F6C] px-3 py-1' smooth={true} to={"/#events"}>Events</HashLink>
+                <div ref={linkRef} className='hidden ss:flex gap-8 items-center text-lg text-white font-medium'>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <HashLink smooth={true} to={"/#events"}>Events</HashLink>
                 </div>
-                <div className='flex ss:hidden gap-8 items-center text-[#F56F6C] font-medium'>
+                <div className='flex ss:hidden gap-8 items-center font-medium'>
                     <button onClick={() => {
                         setStyle("0%");
                     }}>
