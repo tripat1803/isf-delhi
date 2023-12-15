@@ -17,7 +17,7 @@ const SpeakerArr = [
     image: require("../../assets/Speakers/JITENDRA_KUMAR.webp")
   },
   {
-    name: "MR. T.C. GUPTA I.A.S",
+    name: "MR. T.C. GUPTA",
     designation: "Chairperson Right To Service Commission Govt. Of Haryana",
     image: require("../../assets/Speakers/TC_GUPTA.jpg")
   },

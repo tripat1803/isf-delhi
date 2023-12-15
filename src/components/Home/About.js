@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FaCalendarDays } from "react-icons/fa6";
 
 export default function About() {
     return (
@@ -10,10 +11,15 @@ export default function About() {
                     <img className='w-[80%] h-full object-contain' src={require("../../assets/hero-bg.png")} />
                 </div>
                 <div className='flex-1 flex flex-col gap-4'>
-                    <h4 className='text-[#CA5C59] text-xl font-semibold'>About Us</h4>
+                    <h4 className='text-[#CA5C59] text-xl font-semibold'>About ISF</h4>
                     {/* <h2 className='text-4xl font-semibold'>Lorem ipsum dolor sit amet Lorem ipsum</h2> */}
-                    <p className='text-[#333333] text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <p className='text-[#444444] opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p className='text-[#333333] text-xl'>The mission of the International Startup Foundation (ISF) is to revolutionize the startup landscape by empowering entrepreneurs and nurturing a dynamic startup ecosystem. This initiative is designed to help entrepreneurs realize their utmost potential.</p>
+                    <div className='text-[#333333] flex gap-3 items-center text-xl'>
+                        <span className='opacity-90'>Powered By</span> 
+                        <img className='w-[50px] h-[50px]' src={require("../../assets/chitkara.jpeg")} />
+                        <img className='w-[50px] h-[50px]' src={require("../../assets/india-tech.jpg")} />
+                    </div>
+                    <p className='text-[#444444] opacity-70 flex gap-2 items-center'><FaCalendarDays/> <span>January 9, 2024</span></p>
                 </div>
             </div>
         </div>

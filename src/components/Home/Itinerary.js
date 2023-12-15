@@ -126,7 +126,7 @@ export default function Itinerary() {
                                     <l1>Guest of Honour-Dr. Madhu Chitkara, Pro-Chancellor, Chitkara University</l1>
                                     <l1>Guest of Honour-Mr. Arvind Kumar, Director General, STPI</l1>
                                     <l1>Guest of Honour-Dr. Jitendra Kumar, Managing Director , BIRAC</l1>
-                                    <l1>Guest of Honour-Mr. T.C. Gupta  I.A.S.,  Chairperson  Right To Service Commission, Govt. of  Haryana</l1>
+                                    <l1>Guest of Honour-Mr. T.C. Gupta,  Chairperson  Right To Service Commission, Govt. of  Haryana</l1>
                                     <l1>Special Address by Chief Guest</l1>
                                     <l1>MoU Exchanges and Award Session</l1>
                                 </ul>
