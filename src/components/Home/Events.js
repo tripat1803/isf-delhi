@@ -7,44 +7,44 @@ const SpeakerArr = [
     image: require("../../assets/Speakers/madhu_chitkara.jpeg")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "MR. ARVIND KUMAR",
+    designation: "Director General STPI",
+    image: require("../../assets/Speakers/ARVIND_KUMAR.webp")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "DR. JITENDRA KUMAR",
+    designation: "Managing Director BIRAC",
+    image: require("../../assets/Speakers/JITENDRA_KUMAR.webp")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "MR. T.C. GUPTA I.A.S ( RETD.)",
+    designation: "Chairperson Right To Service Commission Govt. Of Haryana",
+    image: require("../../assets/Speakers/TC_GUPTA.jpg")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "MS. HARGUNJIT KAUR IAS",
+    designation: "Secretary- Industries, Finance and Tourism Chandigarh Administration",
+    image: require("../../assets/Speakers/HARGUNJIT_KAUR.jpg")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "DR. SATISH KUMAR",
+    designation: "CSIR- CSIO Chandigarh",
+    image: require("../../assets/Speakers/SATISH_KUMAR.jpg")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "AIR MARSHAL RKS SHERA (RETD.)",
+    designation: "PVSM, AVSM, VSM",
+    image: require("../../assets/Speakers/AIR_MARSHAL_RKS.jpg")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "MR.ALOK MITTAL",
+    designation: "President TiE Delhi NCR",
+    image: require("../../assets/Speakers/ALOK_MITTAL.png")
   },
   {
-    name: "DR. MADHU CHITKARA",
-    designation: "Pro Chancellor Chitkara University",
-    image: require("../../assets/Speakers/madhu_chitkara.jpeg")
+    name: "DR. PARMEET SINGH CHADHA",
+    designation: "CEO World Exports (India)",
+    image: require("../../assets/Speakers/Parmeet_Singh_Chadha.png")
   }
 ];
 
