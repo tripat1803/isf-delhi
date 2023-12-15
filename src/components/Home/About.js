@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className='flex flex-col items-center justify-between py-20 px-8 sm:px-16'>
+        <div id='about' className='flex flex-col items-center justify-between py-20 px-8 sm:px-16'>
             <div className="w-full max-w-screen-xl flex flex-col lg:flex-row items-center gap-12">
                 <div className='w-full sm:w-[65%] lg:w-[45%] relative'>
                     <img className='absolute top-0 -left-[20px] w-[90px] h-[90px] object-contain' src={require("../../assets/icon1.png")} />

@@ -43,11 +43,12 @@ export default function Navbar() {
                     <img className='w-[100px]' src={require("../assets/logo.png")} />
                 </Link>
                 <div ref={linkRef} className='hidden ss:flex gap-8 items-center text-lg text-white font-medium'>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <HashLink smooth={true} to={"/#events"}>Events</HashLink>
+                    <HashLink smooth={true} to="/#home">Home</HashLink>
+                    <HashLink smooth={true} to="/#about">About</HashLink>
+                    <HashLink smooth={true} to={"/#speakers"}>Speakers</HashLink>
+                    <HashLink smooth={true} to="/#itinerary">Itinerary</HashLink>
                 </div>
-                <div className='flex ss:hidden gap-8 items-center font-medium'>
+                <div className='flex ss:hidden gap-8 items-center font-medium text-white'>
                     <button onClick={() => {
                         setStyle("0%");
                     }}>
@@ -64,15 +65,18 @@ export default function Navbar() {
                     setStyle("-150%");
                 }} size={24} color='white' className='absolute top-3 right-3 cursor-pointer' />
                 <div className='flex flex-col gap-4 text-lg font-medium text-white'>
-                    <Link onClick={() => {
-                        setStyle("-150%");
-                    }} to="/">Home</Link>
-                    <Link onClick={() => {
-                        setStyle("-150%");
-                    }} to="/about">About</Link>
                     <HashLink onClick={() => {
                         setStyle("-150%");
-                    }} smooth={true} to={"/#events"}>Events</HashLink>
+                    }} smooth={true} to="/#home">Home</HashLink>
+                    <HashLink onClick={() => {
+                        setStyle("-150%");
+                    }} smooth={true} to="/#about">About</HashLink>
+                    <HashLink onClick={() => {
+                        setStyle("-150%");
+                    }} smooth={true} to={"/#speakers"}>Speakers</HashLink>
+                    <HashLink onClick={() => {
+                        setStyle("-150%");
+                    }} smooth={true} to="/#itinerary">Itinerary</HashLink>
                 </div>
             </div>
         </div>

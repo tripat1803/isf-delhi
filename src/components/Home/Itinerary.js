@@ -35,7 +35,7 @@ export default function Itinerary() {
     }, []);
 
     return (
-        <div className='overflow-hidden'>
+        <div id='itinerary' className='overflow-hidden'>
             <div ref={triggerRef} className='flex flex-col gap-10 justify-center py-20 h-[100vh] px-4 ss:px-8 sm:px-16'>
                 <div className='w-full font-bold 2xl:text-6xl ss:text-5xl xs:text-4xl text-3xl !leading-[120%] text-[#601212]'>
                     <p>Timeline of the event</p>

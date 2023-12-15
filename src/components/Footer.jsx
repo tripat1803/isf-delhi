@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 export default function Footer() {
@@ -20,9 +19,10 @@ export default function Footer() {
                 <div className='w-full text-lg flex sm:justify-center text-white'>
                     <div className='w-[max-content] flex flex-col gap-4'>
                         <p className='text-2xl'>Navigation</p>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About Us</Link>
-                        <HashLink smooth={true} to="/#events">Events</HashLink>
+                        <HashLink smooth={true} to="/#home">Home</HashLink>
+                        <HashLink smooth={true} to="/#about">About</HashLink>
+                        <HashLink smooth={true} to={"/#speakers"}>Speakers</HashLink>
+                        <HashLink smooth={true} to="/#itinerary">Itinerary</HashLink>
                     </div>
                 </div>
                 <div className='w-full text-white flex flex-col gap-4'>
