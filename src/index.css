@@ -19,3 +19,26 @@
     height: 10px;
     background-color: black;
 }
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    top: -35px;
+    width: 8px;
+    height: 45px;
+    background-color: #CA5C59;
+    left: 20%;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+.timeline-item::after{
+    content: "";
+    position: absolute;
+    top: -35px;
+    width: 8px;
+    height: 45px;
+    background-color: #CA5C59;
+    right: 20%;
+    border-radius: 100px;
+    border: 1px solid white;
+}

@@ -3,6 +3,7 @@ import Events from '../components/Home/Events'
 import Hero from '../components/Home/Hero'
 import About from '../components/Home/About'
 import Itinerary from '../components/Home/Itinerary'
+import ItineraryUpdated from '../components/Home/ItineraryUpdated'
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         <Hero/>
         <About/>
         <Events/>
-        <Itinerary/>
+        <ItineraryUpdated/>
     </Fragment>
   )
 }

@@ -64,7 +64,7 @@ function SpeakerCard({ data }) {
 export default function Events() {
   return (
     <div id='speakers' className='flex flex-col gap-8 items-center py-12 px-8 sm:px-16'>
-      <h1 className='text-5xl font-semibold text-[#601212]'>Event Speakers</h1>
+      <h1 className='text-5xl font-semibold text-[#601212]'>Eminent Guests</h1>
       <div className='max-w-screen-xl grid grid-cols-[270px] md:grid-cols-[270px_270px] lgx:grid-cols-[270px_270px_270px_270px] gap-8'>
         {
           SpeakerArr.slice(0, 8).map((item) => (

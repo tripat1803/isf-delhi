@@ -39,7 +39,7 @@ export default function Navbar() {
     return (
         <div ref={navRef} className={`duration-300 absolute top-0 left-0 z-[20] w-full flex justify-center items-center py-4 px-4 ss:px-8 sm:px-16`}>
             <div className='w-full max-w-screen-2xl flex justify-between'>
-                <Link className='flex items-center' to="/">
+                <Link className='flex gap-1 items-center' to="/">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 828 294" width="140" height="50">
                         <title>Chitkara</title>
                         <g id="Background">
@@ -50,13 +50,13 @@ export default function Navbar() {
                     </svg>
                     <img className='h-[60px] mt-[2px] object-cover' src={require("../assets/cuceed.png")} />
                 </Link>
-                <div ref={linkRef} className='hidden ss:flex gap-8 items-center text-lg text-white font-medium'>
+                <div ref={linkRef} className='hidden md:flex gap-8 items-center text-lg text-white font-medium'>
                     <HashLink smooth={true} to="/#home">Home</HashLink>
                     <HashLink smooth={true} to="/#about">About</HashLink>
                     <HashLink smooth={true} to={"/#speakers"}>Speakers</HashLink>
                     <HashLink smooth={true} to="/#itinerary">Itinerary</HashLink>
                 </div>
-                <div className='flex ss:hidden gap-8 items-center font-medium text-white'>
+                <div className='flex md:hidden gap-8 items-center font-medium text-white'>
                     <button onClick={() => {
                         setStyle("0%");
                     }}>
