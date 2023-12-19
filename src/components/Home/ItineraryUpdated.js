@@ -15,7 +15,7 @@ function SubLink({ title, time, icon }) {
             <div className='w-[180px] py-3 whitespace-nowrap pr-8 border-r-[4px] border-[#CA5C59] text-sm'>{time}</div>
             <div className={`text-xl w-[600px] self-center ${!time && "py-2"} flex items-center gap-2`}>{icon}<span>{title}</span></div>
         </div>
-    )
+    );
 }
 
 export default function ItineraryUpdated() {
@@ -35,39 +35,39 @@ export default function ItineraryUpdated() {
             <div ref={sectionRef} className='flex flex-col'>
                 {/* Links */}
                 <Link icon={<FaGlobe/>} top={true} title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <Link title={"Inauguration Of ISF -DELHI 2024 & Exhibition"} time={"10:00 AM - 10:30 AM"} />
+                <Link title={"Networking Break Tea /Coffee"} time={"10:30 AM - 11:00 AM"} />
+                <Link title={"Special Key Notes"} time={"11:00 AM - 12:00 PM"} />
 
                 {/* Sub Links */}
-                <SubLink title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <SubLink title={"Special Keynote By Air Marshal RKS Shera PVSM, AVSM, VSM (Retd.)"} time={"11:00 AM - 11:20 AM"} />
+                <SubLink title={"Special  Keynote By Ms. Hargunjit Kaur IAS  Secretary- Industries, Finance and Tourism, Chandigarh Administration"} time={"11:20 AM - 11:40 AM"} />
+                <SubLink title={"Special Keynote By Dr. Satish Kumar CSIR- CSIO, Chandigarh"} time={"11:40 AM - 12:00 PM"} />
 
                 {/* Links */}
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <Link title={"Lunch"} time={"12:00 PM - 01:00 PM"} />
+                <Link title={"The  Spotlight  ISF - DELHI 2024"} time={"01:00 PM - 03:00 PM"} />
 
                 {/* Sub Links */}
-                <SubLink title={"Fireside Chat with ISF Pearls Fireside Chat with ISF Pearls Fireside Chat with ISF Pearls Chat with ISF Pearls Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} />
+                <SubLink title={"Conference Inauguration"} />
+                <SubLink title={"Lightning of Lamp-marking the Inauguration"} />
+                <SubLink title={"Inaugural Speech by Hon'ble Dr. J.A. Chowdary "} />
+                <SubLink title={"Guest of Honour-Dr. Madhu Chitkara, Pro-Chancellor, Chitkara University"} />
+                <SubLink title={"Guest of Honour-Mr. Arvind Kumar, Director General, STPI"} />
+                <SubLink title={"Guest of Honour-Dr. Jitendra Kumar, Managing Director , BIRAC"} />
+                <SubLink title={"Guest of Honour-Mr. T.C. Gupta  Chairperson  Right To Service Commission, Govt. of  Haryana"} />
+                <SubLink title={"Special Address by Chief Guest"} />
+                <SubLink title={"MoU Exchanges and Award Session"} />
 
                 {/* Links */}
-                <Link title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <Link title={"The ISF-DELHI 2024 Odyssey"} time={"03:00 PM - 05:30 PM"} />
 
                 {/* Sub Links */}
-                <SubLink title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <SubLink title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />                
+                <SubLink title={"Panel Discussion - What Next for Incubators and Accelerators"} time={"03:00 PM - 04:00 PM"} />
+                <SubLink title={"Round Table Discussion - Investments Landscape for Startups"} time={"04:00 PM - 05:30 PM"} />                
 
                 {/* Links */}
-                <Link bottom={true} title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <Link bottom={true} title={"CXO Networking Dinner (By Invite Only)"} time={"09:00 AM - 10:00 AM"} />
             </div>
         </div>
     );
