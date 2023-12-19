@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import SpeakerInfo from "./pages/Speaker";
+import NotFound from "./pages/404";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/speaker" element={<SpeakerInfo/>}/>
+        <Route path="/not-found" element={<NotFound/>}/>
+        <Route path="/:id" element={<SpeakerInfo/>}/>
       </Routes>
       <Footer/>
     </Fragment>

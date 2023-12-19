@@ -21,11 +21,11 @@ function SubLink({ title, time, icon }) {
 export default function ItineraryUpdated() {
     let sectionRef = useRef();
 
-    useEffect(() => {
-        window.onscroll = () => {
-            console.log(sectionRef.current.childNode);
-        }
-    }, []);
+    // useEffect(() => {
+    //     window.onscroll = () => {
+    //         console.log(sectionRef.current.childNode);
+    //     }
+    // }, []);
 
     return (
         <div id='itinerary' className='flex flex-col xlg:items-center gap-12 py-20 px-4 ss:px-8 sm:px-16'>
