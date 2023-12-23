@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { FaGlobe } from "react-icons/fa";
+import { FaGlobe, FaHandshake } from "react-icons/fa";
+import { GiInauguration, GiCoffeeCup, GiForkKnifeSpoon, GiBullseye } from "react-icons/gi";
+import { IoPeopleSharp } from "react-icons/io5";
+
 
 function Link({ title, time, icon, top = false, bottom = false }) {
     return (
@@ -35,9 +38,9 @@ export default function ItineraryUpdated() {
             <div ref={sectionRef} className='flex flex-col'>
                 {/* Links */}
                 <Link icon={<FaGlobe/>} top={true} title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
-                <Link title={"Inauguration Of ISF -DELHI 2024 & Exhibition"} time={"10:00 AM - 10:30 AM"} />
-                <Link title={"Networking Break Tea /Coffee"} time={"10:30 AM - 11:00 AM"} />
-                <Link title={"Special Key Notes"} time={"11:00 AM - 12:00 PM"} />
+                <Link icon={<GiInauguration/>} title={"Inauguration Of ISF -DELHI 2024 & Exhibition"} time={"10:00 AM - 10:30 AM"} />
+                <Link icon={<GiCoffeeCup/>} title={"Networking Break Tea /Coffee"} time={"10:30 AM - 11:00 AM"} />
+                <Link icon={<IoPeopleSharp />} title={"Special Key Notes"} time={"11:00 AM - 12:00 PM"} />
 
                 {/* Sub Links */}
                 <SubLink title={"Special Keynote By Air Marshal RKS Shera PVSM, AVSM, VSM (Retd.)"} time={"11:00 AM - 11:20 AM"} />
@@ -45,8 +48,8 @@ export default function ItineraryUpdated() {
                 <SubLink title={"Special Keynote By Dr. Satish Kumar CSIR- CSIO, Chandigarh"} time={"11:40 AM - 12:00 PM"} />
 
                 {/* Links */}
-                <Link title={"Lunch"} time={"12:00 PM - 01:00 PM"} />
-                <Link title={"The  Spotlight  ISF - DELHI 2024"} time={"01:00 PM - 03:00 PM"} />
+                <Link icon={<GiForkKnifeSpoon/>} title={"Lunch"} time={"12:00 PM - 01:00 PM"} />
+                <Link icon={<GiBullseye/>} title={"The  Spotlight  ISF - DELHI 2024"} time={"01:00 PM - 03:00 PM"} />
 
                 {/* Sub Links */}
                 <SubLink title={"Conference Inauguration"} />
@@ -60,14 +63,14 @@ export default function ItineraryUpdated() {
                 <SubLink title={"MoU Exchanges and Award Session"} />
 
                 {/* Links */}
-                <Link title={"The ISF-DELHI 2024 Odyssey"} time={"03:00 PM - 05:30 PM"} />
+                <Link icon={<FaHandshake />} title={"The ISF-DELHI 2024 Odyssey"} time={"03:00 PM - 05:30 PM"} />
 
                 {/* Sub Links */}
                 <SubLink title={"Panel Discussion - What Next for Incubators and Accelerators"} time={"03:00 PM - 04:00 PM"} />
                 <SubLink title={"Round Table Discussion - Investments Landscape for Startups"} time={"04:00 PM - 05:30 PM"} />                
 
                 {/* Links */}
-                <Link bottom={true} title={"CXO Networking Dinner (By Invite Only)"} time={"09:00 AM - 10:00 AM"} />
+                <Link icon={<FaGlobe/>} bottom={true} title={"CXO Networking Dinner (By Invite Only)"} time={"09:00 AM - 10:00 AM"} />
             </div>
         </div>
     );
