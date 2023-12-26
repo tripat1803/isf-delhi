@@ -13,17 +13,20 @@ function SpeakerCard({ keyName, data }) {
       setStyle(false);
     }} onClick={() => {
       navigate("/" + keyName);
-    }} className='w-full h-[20rem] rounded-lg flex items-end p-4 relative overflow-hidden cursor-pointer'>
-      <img className='absolute top-0 left-0 w-full h-full object-cover z-[1]' src={data.image} />
-      <div className='bg-[linear-gradient(180deg,rgba(249,206,205,0.00)_50%,#7A3D3C_90%)] absolute top-0 left-0 w-full h-full z-[2]'></div>
-      <div className='z-[13] text-white flex flex-col gap-2'>
-        <p className='text-xl font-semibold'>{data.name}</p>
-        <p className='text-sm'>{data.designation}</p>
-        <MdArrowOutward className='duration-300' style={style ? {
-          fontSize: "20px"
-        } : {
-          fontSize: "0px"
-        }} />
+    }} className={`w-full h-[20rem] cursor-pointer duration-300 speaker-card`}>
+      <div className='w-full h-full relative overflow-hidden rounded-lg flex items-end p-4 speaker-card-inner'>
+        {!style && <img className='absolute top-0 left-0 w-full h-full object-cover z-[1]' src={data.image} />}
+        <div className={`${style ? "duration-700 bg-[#CA5C59]" : "duration-700 bg-[linear-gradient(180deg,rgba(249,206,205,0.00)_50%,#7A3D3C_90%)]"} absolute top-0 left-0 w-full h-full z-[2]`}></div>
+        {!style ? <div className='z-[13] text-white flex flex-col gap-2'>
+          <p className='text-xl font-semibold'>{data.name}</p>
+          <p className='text-sm'>{data.designation}</p>
+        </div> : <>
+          <div style={{
+            transform: "rotateY(-180deg)"
+          }} className='absolute top-0 left-0 w-full h-full z-[3] p-4 text-white'>
+            {String(data.body[0]+((data.body.length >= 2) ? data.body[1] : "")).substring(0, 300)}....
+          </div>
+        </>}
       </div>
     </div>
   )

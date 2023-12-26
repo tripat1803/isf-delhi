@@ -50,7 +50,7 @@
 .timeline-text::after{
     content: "";
     position: absolute;
-    right: -17px;
+    right: -16.5px;
     padding: 12px;
     border-radius: 100%;
     background-color: white;
@@ -75,4 +75,12 @@
     left: -48px;
     transform: rotate(45deg);
     background-color: #CA5C59;
+}
+
+.speaker-card-inner{
+    transform-style: preserve-3d;
+    transition: 0.8s;
+}
+.speaker-card:hover .speaker-card-inner {
+    transform: rotateY(180deg);
 }
