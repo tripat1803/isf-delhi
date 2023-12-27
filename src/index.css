@@ -50,11 +50,12 @@
 .timeline-text::after{
     content: "";
     position: absolute;
-    right: -16.5px;
-    padding: 12px;
+    right: -12px;
+    padding: 10px;
     border-radius: 100%;
     background-color: white;
-    border: 3px solid #CA5C59;
+    /* border: 3.5px solid #CA5C59; */
+    background-color: #CA5C59;
 }
 .timeline-top-icon::before{
     content: "";

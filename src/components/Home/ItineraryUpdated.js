@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { FaGlobe, FaHandshake } from "react-icons/fa";
 import { GiInauguration, GiCoffeeCup, GiForkKnifeSpoon, GiBullseye } from "react-icons/gi";
 import { IoPeopleSharp } from "react-icons/io5";
+import { FaRocketchat } from "react-icons/fa";
 
 
 function Link({ title, time, icon, top = false, bottom = false }) {
@@ -37,7 +38,7 @@ export default function ItineraryUpdated() {
             </div>
             <div ref={sectionRef} className='flex flex-col'>
                 {/* Links */}
-                <Link icon={<FaGlobe className='text-3xl' />} top={true} title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
+                <Link icon={<FaRocketchat className='text-3xl' />} top={true} title={"Fireside Chat with ISF Pearls"} time={"09:00 AM - 10:00 AM"} />
                 <Link icon={<GiInauguration className='text-3xl'/>} title={"Inauguration Of ISF -DELHI 2024 & Exhibition"} time={"10:00 AM - 10:30 AM"} />
                 <Link icon={<GiCoffeeCup className='text-3xl'/>} title={"Networking Break Tea /Coffee"} time={"10:30 AM - 11:00 AM"} />
                 <Link icon={<IoPeopleSharp className='text-3xl' />} title={"Special Key Notes"} time={"11:00 AM - 12:00 PM"} />

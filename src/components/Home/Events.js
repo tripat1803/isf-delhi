@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { SpeakerArr } from '../../utils/SpakerData';
 import { useNavigate } from 'react-router-dom';
-import { MdArrowOutward } from "react-icons/md";
 
 function SpeakerCard({ keyName, data }) {
   let navigate = useNavigate();

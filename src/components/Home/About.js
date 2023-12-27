@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaCalendarDays } from "react-icons/fa6";
 
 export default function About() {
     return (
@@ -11,10 +10,11 @@ export default function About() {
                     <img className='w-[80%] h-full object-contain' src={require("../../assets/hero-bg.png")} />
                 </div>
                 <div className='flex-1 flex flex-col gap-4'>
-                    <h4 className='text-[#CA5C59] text-xl font-semibold'>About ISF</h4>
+                    <h4 className='text-[#CA5C59] text-3xl font-semibold'>About ISF Delhi 2024</h4>
                     {/* <h2 className='text-4xl font-semibold'>Lorem ipsum dolor sit amet Lorem ipsum</h2> */}
-                    <p className='text-[#333333] text-xl'>The mission of the International Startup Foundation (ISF) is to revolutionize the startup landscape by empowering entrepreneurs and nurturing a dynamic startup ecosystem. This initiative is designed to help entrepreneurs realize their utmost potential.</p>
-                    <p className='text-[#333333] text-xl'>This festival is complementary to the great initiatives of Government of India (GOI) such as Startup India, Digital India, Make-in-India, etc and will bring together more than 50,000+ startups to advance their missions and drive towards an Atmanirbhar Bharat.</p>
+                    <p className='text-[#333333]'>The International Startup Foundation (ISF) is dedicated to transforming the startup landscape by empowering visionaries and fostering a vibrant entrepreneurial ecosystem. Our mission is crafted to assist entrepreneurs in unlocking their full potential.</p>
+                    <p className='text-[#333333]'>Aligned with the commendable initiatives of the Government of India (GOI), such as Startup India, Digital India, and Make-in-India, the ISF - Delhi 2024 festival is set to unite over 50,000 startups. This gathering aims to propel their missions forward, contributing to the vision of an Atmanirbhar Bharat.</p>
+                    <p className='text-[#333333]'>In collaboration with Chitkara University, the Center for Entrepreneurship and Economic Development (CEED) is deeply committed to this mission. CEED aspires to cultivate a new generation of Indian entrepreneurs, poised to make a global impact and extend their influence worldwide.</p>
                     {/* <div className='text-[#333333] flex gap-3 items-center text-xl'>
                         <span className='opacity-90'>Powered By</span> 
                         <img className='w-[50px] h-[50px]' src={require("../../assets/chitkara.jpeg")} />
