@@ -35,14 +35,17 @@ export default function Events() {
   return (
     <div id='speakers' className='flex flex-col gap-8 items-center py-12 px-8 sm:px-16'>
       <h1 className='text-5xl font-semibold text-[#601212]'>Eminent Guests</h1>
-      <div className='max-w-screen-xl grid grid-cols-[270px] md:grid-cols-[270px_270px] lgx:grid-cols-[270px_270px_270px_270px] gap-8'>
+      <div className='max-w-screen-xl grid grid-cols-[270px] md:grid-cols-[270px_270px] lg:grid-cols-[270px_270px_270px] xl:grid-cols-[270px_270px_270px_270px] gap-8'>
         {
           Object.keys(SpeakerArr).slice(0, 8).map((item) => (
             <SpeakerCard key={SpeakerArr[item].name} keyName={item} data={SpeakerArr[item]} />
           ))
         }
+        <div className='w-[270px] hidden lg:block xl:hidden'>
+          <SpeakerCard key={SpeakerArr[Object.keys(SpeakerArr)[8]].name} keyName={Object.keys(SpeakerArr)[8]} data={SpeakerArr[Object.keys(SpeakerArr)[8]]} />
+        </div>
       </div>
-      <div className='w-[270px]'>
+      <div className='w-[270px] block lg:hidden xl:block'>
         <SpeakerCard key={SpeakerArr[Object.keys(SpeakerArr)[8]].name} keyName={Object.keys(SpeakerArr)[8]} data={SpeakerArr[Object.keys(SpeakerArr)[8]]} />
       </div>
     </div>
